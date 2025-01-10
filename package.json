@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "A Discord bot for search messages across a server.",
   "main": "bot.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node dist/bot.js",
+    "dev:bot": "ts-node src/bot.ts",
+    "build": "tsc",
+    "deploy": "ts-node src/deploy.ts",
+    "dev": "npm run deploy && npm run dev:bot"
+  },
   "keywords": [
     "discord",
     "bot",
